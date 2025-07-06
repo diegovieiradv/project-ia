@@ -1,4 +1,4 @@
-let webhook = "https://rodolfomori123123.app.n8n.cloud/webhook/animacao-css";
+let webhook = "http://localhost:5678/webhook/animacao-css";
 
 // funcao assincrona
 async function cliqueiNoBotao() {

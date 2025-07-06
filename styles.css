@@ -88,7 +88,7 @@ h2 {
   font-size: 0.875rem;
 }
 
-.resultado {
+.area-resultado {
   background-color: #fafafa;
   border-radius: calc(var(--border-radius) - 4px);
   height: calc(100% - 3rem);
@@ -96,11 +96,35 @@ h2 {
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  position: relative;
+}
+
+.bola-verde {
+  width: 80px;
+  height: 80px;
+  background: #34c759;
+  border-radius: 50%;
+  animation: escalar 1s infinite;
+  margin: 0 auto;
+}
+
+@keyframes escalar {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 .resultado-placeholder {
   text-align: center;
   color: #94a3b8;
+  width: 100%;
+  max-width: 100%;
 }
 
 .emoji {
